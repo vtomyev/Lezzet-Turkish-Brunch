@@ -1,4 +1,4 @@
-.card{
+.card {
   border: 0;
 }
 
@@ -22,17 +22,16 @@
   }
 }
 
-.card-active{
+.card-active {
   background: $bg-gradient-primary;
-  *{
+  * {
     color: $white;
   }
 }
 
 .hover-bg-primary {
-
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -46,7 +45,7 @@
   }
 
   .btn {
-    transition: .2s ease;
+    transition: 0.2s ease;
   }
 
   &:hover {
@@ -70,7 +69,7 @@
   }
 
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     width: 170px;
     height: 4px;
@@ -105,7 +104,7 @@
   z-index: 1;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 68px;
     height: 68px;
@@ -113,10 +112,10 @@
     left: 15px;
     border-radius: 50%;
     background: inherit;
-    opacity: .1;
+    opacity: 0.1;
     z-index: -1;
   }
-  &::before{
+  &::before {
     z-index: 1;
     position: relative;
   }
@@ -127,13 +126,14 @@
   z-index: 1;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: -55px;
     left: 73%;
     width: 75px;
     height: 75px;
-    transform: rotate(50deg) scale(0.8) skew(-1deg, -15deg) translateX(16px) translateY(97px);
+    transform: rotate(50deg) scale(0.8) skew(-1deg, -15deg) translateX(16px)
+      translateY(97px);
     background: #f5f6f7;
     z-index: -1;
     @extend .rounded-sm;
@@ -145,20 +145,19 @@
   }
 }
 
-
 .icon-primary {
   color: #062caf;
 }
 
-.icon-yellow{
+.icon-yellow {
   color: #f6a622;
 }
 
-.icon-purple{
+.icon-purple {
   color: #7952f5;
 }
 
-.icon-cyan{
+.icon-cyan {
   color: #02d0a1;
 }
 
@@ -166,62 +165,62 @@
   color: #ff4949;
 }
 
-.icon-orange{
+.icon-orange {
   color: #ff7c17;
 }
 
-.icon-green{
+.icon-green {
   color: #66cc33;
 }
 
-.icon-blue{
+.icon-blue {
   color: #3682ff;
 }
 
-.icon-bg-primary{
-  &::after{
+.icon-bg-primary {
+  &::after {
     background: #062caf;
   }
 }
 
-.icon-bg-yellow{
-  &::after{
+.icon-bg-yellow {
+  &::after {
     background: #f6a622;
   }
 }
 
-.icon-bg-purple{
-  &::after{
+.icon-bg-purple {
+  &::after {
     background: #7952f5;
   }
 }
 
-.icon-bg-cyan{
-  &::after{
+.icon-bg-cyan {
+  &::after {
     background: #02d0a1;
   }
 }
 
-.icon-bg-red{
-  &::after{
+.icon-bg-red {
+  &::after {
     background: #ff4949;
   }
 }
 
-.icon-bg-green{
-  &::after{
+.icon-bg-green {
+  &::after {
     background: #66cc33;
   }
 }
 
-.icon-bg-orange{
-  &::after{
+.icon-bg-orange {
+  &::after {
     background: #ff7c17;
   }
 }
 
-.icon-bg-blue{
-  &::after{
+.icon-bg-blue {
+  &::after {
     background: #3682ff;
   }
 }

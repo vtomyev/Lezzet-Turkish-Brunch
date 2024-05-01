@@ -10,16 +10,16 @@
       return false;
     }
 
-    // Aos js 
+    // Aos js
     AOS.init({
       once: true,
       offset: 250,
-      easing: 'ease',
-      duration: 900
+      easing: "ease",
+      duration: 900,
     });
 
     // ##################
-    // Video Modal 
+    // Video Modal
     // ##################
     let videoPlayBtn = document.querySelectorAll(".play-icon");
     let videoModal = document.querySelector("#videoModal");
@@ -39,10 +39,10 @@
           videoIframe.setAttribute("src", "");
         });
       }
-    };
+    }
 
     // ##################
-    // counterUp 
+    // counterUp
     // ##################
     // You can change this class to specify which elements are going to behave as counters.
     var elements = document.querySelectorAll(".counter");
@@ -97,7 +97,7 @@
 
     // Fire the function on scroll
     window.addEventListener("scroll", handleScroll);
-  })
+  });
 
   // ##################
   // navfixed
@@ -109,16 +109,16 @@
     scrolling = window.scrollY;
 
     if (scrolling > 10) {
-      naviagtion.classList.add('nav-bg');
+      naviagtion.classList.add("nav-bg");
     } else {
-      naviagtion.classList.remove('nav-bg');
+      naviagtion.classList.remove("nav-bg");
     }
-  };
+  }
 
   navFixed();
   window.addEventListener("scroll", (e) => {
     navFixed();
-  })
+  });
 
   // ##################
   // testimonial
@@ -135,19 +135,18 @@
       // when window width is >= 0 px
       0: {
         slidesPerView: 1,
-        spaceBetween: 40
+        spaceBetween: 40,
       },
       // when window width is >= 768 px
       768: {
         slidesPerView: 2,
-        spaceBetween: 50
+        spaceBetween: 50,
       },
       // when window width is >= 991 px
       991: {
         slidesPerView: 3,
-        spaceBetween: 50
-      }
-    }
+        spaceBetween: 50,
+      },
+    },
   });
-
 })();

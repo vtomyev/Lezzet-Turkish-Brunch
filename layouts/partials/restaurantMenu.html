@@ -1,0 +1,78 @@
+  {{ "<!-- restaurantMenu -->"| safeHTML }}
+  <section class="section section-lg-bottom">
+    <div class="container">
+      <div class="row">
+        {{ with .Params.restaurantMenu }}
+          <div class="col-lg-12 text-center">
+            <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+              {{.title}}
+            </h2>
+            
+          </div>
+        {{ end }}
+      </div>
+      <div class="row row-cols-lg-2 row-cols-sm-1 row-cols-md-1 g-5">
+        {{ range $index, $element:= .Params.restaurantMenu.restaurantMenu_table }}
+        {{ $delay := mul $index 200 }}
+      
+          <div class="col">
+            <div class="card border-info text-bg-light">
+              <div class="row g-0">
+                <div class="col-md-4 px-3 py-3">
+                  <figure class="figure">
+                    <img
+                      src="https://thestayathomechef.com/wp-content/uploads/2023/05/Greek-Pizza-8-378x378.jpg"
+                      class="figure-img img-fluid rounded-circle" />
+                  </figure>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <div class="container text-center">
+                      <div class="row">
+                        <div class="col">
+                          <h5 class="card-title">{{ .title }}</h5>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <p class="card-subtitle text-body-secondary mb-3">{{ .description }}</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="container tex-center">
+                      <div class="row row-cols-2">
+                        {{ range $index, $element:= .variations}}
+                          
+                            <div class="col">
+                              <div class="row">
+                                <div class="col-8">
+                                  <h7 class="text-body-primary"> {{ .title}} </h7>
+                                  {{ if .description}}
+                                  <p class="text-body-secondary">
+                                    {{ .description }}
+                                  </p>
+                                  {{ end }}
+                                </div>
+                                <div class="col-4">
+                                  <h7 class="text-body-primary">{{ .price }}</h7>
+                                </div>
+                              </div>
+                            </div>
+                          
+                        {{ end }}
+                      </div>
+                    </div>
+            
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        {{end}}
+      </div>
+
+    </div>
+  </section>  
+
+  {{ "<!-- restaurantMenu -->"| safeHTML }}

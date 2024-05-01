@@ -8,7 +8,7 @@
   border: 2px solid;
   position: relative;
   z-index: 1;
-  transition: .3s ease-in;
+  transition: 0.3s ease-in;
   overflow: hidden;
 
   &:focus,
@@ -62,7 +62,7 @@
   }
 
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -99,7 +99,7 @@
   }
 
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: -102%;
@@ -129,7 +129,7 @@
   }
 
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: -102%;
@@ -160,7 +160,7 @@
   }
 
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: -102%;

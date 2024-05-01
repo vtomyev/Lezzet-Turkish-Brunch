@@ -16,7 +16,7 @@
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
@@ -31,13 +31,12 @@
 
 // testimonial css end
 
-
 // pricing css start
 .pricing-table {
   overflow: hidden;
 
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     width: 80px;
     height: 70px;
@@ -49,7 +48,7 @@
   }
 
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     width: 95px;
     height: 80px;
@@ -62,7 +61,6 @@
 }
 
 // pricing css end
-
 
 .floating-video {
   position: absolute;

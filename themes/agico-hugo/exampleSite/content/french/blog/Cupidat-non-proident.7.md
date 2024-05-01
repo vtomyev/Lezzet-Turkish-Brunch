@@ -6,17 +6,17 @@ watermark: "Blog"
 # page header background image
 page_header_image: "images/background/about.jpg"
 # meta description
-description : "Cupidatat non proident sunt culpa qui officia deserunt mollit <br> anim idest laborum sed ut perspiciatis."
+description: "Cupidatat non proident sunt culpa qui officia deserunt mollit <br> anim idest laborum sed ut perspiciatis."
 # post image
-image : "images/blog/blog-post-7.jpg"
+image: "images/blog/blog-post-7.jpg"
 # post author
-author : "Admin"
+author: "Admin"
 # post categories
 categories: ["Investment Planning"]
 # post tags
 tags: ["Advice"]
 # type
-type : "post"
+type: "post"
 ---
 
 ### Elit duied aiusmod tempor did labore dolory

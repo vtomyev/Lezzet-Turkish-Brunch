@@ -1,5 +1,5 @@
 footer {
-  &>div:first-child {
+  & > div:first-child {
     border-bottom: 1px solid $border-light;
   }
 }
@@ -83,7 +83,6 @@ footer {
       }
 
       &.text-white {
-
         &::placeholder {
           color: $white;
         }

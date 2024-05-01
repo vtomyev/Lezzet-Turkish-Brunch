@@ -1,9 +1,9 @@
 !(function (e, t) {
-  'object' == typeof exports && 'object' == typeof module
+  "object" == typeof exports && "object" == typeof module
     ? (module.exports = t())
-    : 'function' == typeof define && define.amd
+    : "function" == typeof define && define.amd
     ? define([], t)
-    : 'object' == typeof exports
+    : "object" == typeof exports
     ? (exports.AOS = t())
     : (e.AOS = t());
 })(this, function () {
@@ -14,10 +14,10 @@
       return e[o].call(i.exports, i, i.exports, t), (i.loaded = !0), i.exports;
     }
     var n = {};
-    return (t.m = e), (t.c = n), (t.p = 'dist/'), t(0);
+    return (t.m = e), (t.c = n), (t.p = "dist/"), t(0);
   })([
     function (e, t, n) {
-      'use strict';
+      "use strict";
       function o(e) {
         return e && e.__esModule ? e : { default: e };
       }
@@ -52,11 +52,11 @@
         j = {
           offset: 120,
           delay: 0,
-          easing: 'ease',
+          easing: "ease",
           duration: 400,
           disable: !1,
           once: !1,
-          startEvent: 'DOMContentLoaded',
+          startEvent: "DOMContentLoaded",
           throttleDelay: 99,
           debounceDelay: 50,
           disableMutationObserver: !1,
@@ -72,19 +72,19 @@
         },
         S = function () {
           w.forEach(function (e, t) {
-            e.node.removeAttribute('data-aos'),
-              e.node.removeAttribute('data-aos-easing'),
-              e.node.removeAttribute('data-aos-duration'),
-              e.node.removeAttribute('data-aos-delay');
+            e.node.removeAttribute("data-aos"),
+              e.node.removeAttribute("data-aos-easing"),
+              e.node.removeAttribute("data-aos-duration"),
+              e.node.removeAttribute("data-aos-delay");
           });
         },
         z = function (e) {
           return (
             e === !0 ||
-            ('mobile' === e && p.default.mobile()) ||
-            ('phone' === e && p.default.phone()) ||
-            ('tablet' === e && p.default.tablet()) ||
-            ('function' == typeof e && e() === !0)
+            ("mobile" === e && p.default.mobile()) ||
+            ("phone" === e && p.default.phone()) ||
+            ("tablet" === e && p.default.tablet()) ||
+            ("function" == typeof e && e() === !0)
           );
         },
         A = function (e) {
@@ -94,18 +94,18 @@
             z(j.disable) || x
               ? S()
               : (document
-                  .querySelector('body')
-                  .setAttribute('data-aos-easing', j.easing),
+                  .querySelector("body")
+                  .setAttribute("data-aos-easing", j.easing),
                 document
-                  .querySelector('body')
-                  .setAttribute('data-aos-duration', j.duration),
+                  .querySelector("body")
+                  .setAttribute("data-aos-duration", j.duration),
                 document
-                  .querySelector('body')
-                  .setAttribute('data-aos-delay', j.delay),
-                'DOMContentLoaded' === j.startEvent &&
-                ['complete', 'interactive'].indexOf(document.readyState) > -1
+                  .querySelector("body")
+                  .setAttribute("data-aos-delay", j.delay),
+                "DOMContentLoaded" === j.startEvent &&
+                ["complete", "interactive"].indexOf(document.readyState) > -1
                   ? O(!0)
-                  : 'load' === j.startEvent
+                  : "load" === j.startEvent
                   ? window.addEventListener(j.startEvent, function () {
                       O(!0);
                     })
@@ -113,20 +113,20 @@
                       O(!0);
                     }),
                 window.addEventListener(
-                  'resize',
+                  "resize",
                   (0, f.default)(O, j.debounceDelay, !0)
                 ),
                 window.addEventListener(
-                  'orientationchange',
+                  "orientationchange",
                   (0, f.default)(O, j.debounceDelay, !0)
                 ),
                 window.addEventListener(
-                  'scroll',
+                  "scroll",
                   (0, u.default)(function () {
                     (0, b.default)(w, j.once);
                   }, j.throttleDelay)
                 ),
-                j.disableMutationObserver || (0, d.default)('[data-aos]', _),
+                j.disableMutationObserver || (0, d.default)("[data-aos]", _),
                 w)
           );
         };
@@ -139,7 +139,7 @@
     ,
     function (e, t) {
       (function (t) {
-        'use strict';
+        "use strict";
         function n(e, t, n) {
           function o(t) {
             var n = b,
@@ -192,14 +192,14 @@
             _ = !1,
             S = !1,
             z = !0;
-          if ('function' != typeof e) throw new TypeError(f);
+          if ("function" != typeof e) throw new TypeError(f);
           return (
             (t = u(t) || 0),
             i(n) &&
               ((_ = !!n.leading),
-              (S = 'maxWait' in n),
+              (S = "maxWait" in n),
               (y = S ? x(u(n.maxWait) || 0, t) : y),
-              (z = 'trailing' in n ? !!n.trailing : z)),
+              (z = "trailing" in n ? !!n.trailing : z)),
             (m.cancel = l),
             (m.flush = p),
             m
@@ -208,73 +208,73 @@
         function o(e, t, o) {
           var r = !0,
             a = !0;
-          if ('function' != typeof e) throw new TypeError(f);
+          if ("function" != typeof e) throw new TypeError(f);
           return (
             i(o) &&
-              ((r = 'leading' in o ? !!o.leading : r),
-              (a = 'trailing' in o ? !!o.trailing : a)),
+              ((r = "leading" in o ? !!o.leading : r),
+              (a = "trailing" in o ? !!o.trailing : a)),
             n(e, t, { leading: r, maxWait: t, trailing: a })
           );
         }
         function i(e) {
-          var t = 'undefined' == typeof e ? 'undefined' : c(e);
-          return !!e && ('object' == t || 'function' == t);
+          var t = "undefined" == typeof e ? "undefined" : c(e);
+          return !!e && ("object" == t || "function" == t);
         }
         function r(e) {
           return (
-            !!e && 'object' == ('undefined' == typeof e ? 'undefined' : c(e))
+            !!e && "object" == ("undefined" == typeof e ? "undefined" : c(e))
           );
         }
         function a(e) {
           return (
-            'symbol' == ('undefined' == typeof e ? 'undefined' : c(e)) ||
+            "symbol" == ("undefined" == typeof e ? "undefined" : c(e)) ||
             (r(e) && k.call(e) == d)
           );
         }
         function u(e) {
-          if ('number' == typeof e) return e;
+          if ("number" == typeof e) return e;
           if (a(e)) return s;
           if (i(e)) {
-            var t = 'function' == typeof e.valueOf ? e.valueOf() : e;
-            e = i(t) ? t + '' : t;
+            var t = "function" == typeof e.valueOf ? e.valueOf() : e;
+            e = i(t) ? t + "" : t;
           }
-          if ('string' != typeof e) return 0 === e ? e : +e;
-          e = e.replace(l, '');
+          if ("string" != typeof e) return 0 === e ? e : +e;
+          e = e.replace(l, "");
           var n = m.test(e);
           return n || b.test(e) ? v(e.slice(2), n ? 2 : 8) : p.test(e) ? s : +e;
         }
         var c =
-            'function' == typeof Symbol && 'symbol' == typeof Symbol.iterator
+            "function" == typeof Symbol && "symbol" == typeof Symbol.iterator
               ? function (e) {
                   return typeof e;
                 }
               : function (e) {
                   return e &&
-                    'function' == typeof Symbol &&
+                    "function" == typeof Symbol &&
                     e.constructor === Symbol &&
                     e !== Symbol.prototype
-                    ? 'symbol'
+                    ? "symbol"
                     : typeof e;
                 },
-          f = 'Expected a function',
+          f = "Expected a function",
           s = NaN,
-          d = '[object Symbol]',
+          d = "[object Symbol]",
           l = /^\s+|\s+$/g,
           p = /^[-+]0x[0-9a-f]+$/i,
           m = /^0b[01]+$/i,
           b = /^0o[0-7]+$/i,
           v = parseInt,
           y =
-            'object' == ('undefined' == typeof t ? 'undefined' : c(t)) &&
+            "object" == ("undefined" == typeof t ? "undefined" : c(t)) &&
             t &&
             t.Object === Object &&
             t,
           g =
-            'object' == ('undefined' == typeof self ? 'undefined' : c(self)) &&
+            "object" == ("undefined" == typeof self ? "undefined" : c(self)) &&
             self &&
             self.Object === Object &&
             self,
-          h = y || g || Function('return this')(),
+          h = y || g || Function("return this")(),
           w = Object.prototype,
           k = w.toString,
           x = Math.max,
@@ -283,16 +283,16 @@
             return h.Date.now();
           };
         e.exports = o;
-      }.call(
+      }).call(
         t,
         (function () {
           return this;
         })()
-      ));
+      );
     },
     function (e, t) {
       (function (t) {
-        'use strict';
+        "use strict";
         function n(e, t, n) {
           function i(t) {
             var n = b,
@@ -345,78 +345,78 @@
             _ = !1,
             S = !1,
             z = !0;
-          if ('function' != typeof e) throw new TypeError(c);
+          if ("function" != typeof e) throw new TypeError(c);
           return (
             (t = a(t) || 0),
             o(n) &&
               ((_ = !!n.leading),
-              (S = 'maxWait' in n),
+              (S = "maxWait" in n),
               (y = S ? k(a(n.maxWait) || 0, t) : y),
-              (z = 'trailing' in n ? !!n.trailing : z)),
+              (z = "trailing" in n ? !!n.trailing : z)),
             (m.cancel = l),
             (m.flush = p),
             m
           );
         }
         function o(e) {
-          var t = 'undefined' == typeof e ? 'undefined' : u(e);
-          return !!e && ('object' == t || 'function' == t);
+          var t = "undefined" == typeof e ? "undefined" : u(e);
+          return !!e && ("object" == t || "function" == t);
         }
         function i(e) {
           return (
-            !!e && 'object' == ('undefined' == typeof e ? 'undefined' : u(e))
+            !!e && "object" == ("undefined" == typeof e ? "undefined" : u(e))
           );
         }
         function r(e) {
           return (
-            'symbol' == ('undefined' == typeof e ? 'undefined' : u(e)) ||
+            "symbol" == ("undefined" == typeof e ? "undefined" : u(e)) ||
             (i(e) && w.call(e) == s)
           );
         }
         function a(e) {
-          if ('number' == typeof e) return e;
+          if ("number" == typeof e) return e;
           if (r(e)) return f;
           if (o(e)) {
-            var t = 'function' == typeof e.valueOf ? e.valueOf() : e;
-            e = o(t) ? t + '' : t;
+            var t = "function" == typeof e.valueOf ? e.valueOf() : e;
+            e = o(t) ? t + "" : t;
           }
-          if ('string' != typeof e) return 0 === e ? e : +e;
-          e = e.replace(d, '');
+          if ("string" != typeof e) return 0 === e ? e : +e;
+          e = e.replace(d, "");
           var n = p.test(e);
           return n || m.test(e) ? b(e.slice(2), n ? 2 : 8) : l.test(e) ? f : +e;
         }
         var u =
-            'function' == typeof Symbol && 'symbol' == typeof Symbol.iterator
+            "function" == typeof Symbol && "symbol" == typeof Symbol.iterator
               ? function (e) {
                   return typeof e;
                 }
               : function (e) {
                   return e &&
-                    'function' == typeof Symbol &&
+                    "function" == typeof Symbol &&
                     e.constructor === Symbol &&
                     e !== Symbol.prototype
-                    ? 'symbol'
+                    ? "symbol"
                     : typeof e;
                 },
-          c = 'Expected a function',
+          c = "Expected a function",
           f = NaN,
-          s = '[object Symbol]',
+          s = "[object Symbol]",
           d = /^\s+|\s+$/g,
           l = /^[-+]0x[0-9a-f]+$/i,
           p = /^0b[01]+$/i,
           m = /^0o[0-7]+$/i,
           b = parseInt,
           v =
-            'object' == ('undefined' == typeof t ? 'undefined' : u(t)) &&
+            "object" == ("undefined" == typeof t ? "undefined" : u(t)) &&
             t &&
             t.Object === Object &&
             t,
           y =
-            'object' == ('undefined' == typeof self ? 'undefined' : u(self)) &&
+            "object" == ("undefined" == typeof self ? "undefined" : u(self)) &&
             self &&
             self.Object === Object &&
             self,
-          g = v || y || Function('return this')(),
+          g = v || y || Function("return this")(),
           h = Object.prototype,
           w = h.toString,
           k = Math.max,
@@ -425,15 +425,15 @@
             return g.Date.now();
           };
         e.exports = n;
-      }.call(
+      }).call(
         t,
         (function () {
           return this;
         })()
-      ));
+      );
     },
     function (e, t) {
-      'use strict';
+      "use strict";
       function n(e, t) {
         var n = new r(o);
         (a = t),
@@ -449,12 +449,12 @@
             var t = Array.prototype.slice.call(e.addedNodes),
               n = Array.prototype.slice.call(e.removedNodes),
               o = t.concat(n).filter(function (e) {
-                return e.hasAttribute && e.hasAttribute('data-aos');
+                return e.hasAttribute && e.hasAttribute("data-aos");
               }).length;
             o && a();
           });
       }
-      Object.defineProperty(t, '__esModule', { value: !0 });
+      Object.defineProperty(t, "__esModule", { value: !0 });
       var i = window.document,
         r =
           window.MutationObserver ||
@@ -464,22 +464,22 @@
       t.default = n;
     },
     function (e, t) {
-      'use strict';
+      "use strict";
       function n(e, t) {
         if (!(e instanceof t))
-          throw new TypeError('Cannot call a class as a function');
+          throw new TypeError("Cannot call a class as a function");
       }
       function o() {
-        return navigator.userAgent || navigator.vendor || window.opera || '';
+        return navigator.userAgent || navigator.vendor || window.opera || "";
       }
-      Object.defineProperty(t, '__esModule', { value: !0 });
+      Object.defineProperty(t, "__esModule", { value: !0 });
       var i = (function () {
           function e(e, t) {
             for (var n = 0; n < t.length; n++) {
               var o = t[n];
               (o.enumerable = o.enumerable || !1),
                 (o.configurable = !0),
-                'value' in o && (o.writable = !0),
+                "value" in o && (o.writable = !0),
                 Object.defineProperty(e, o.key, o);
             }
           }
@@ -502,21 +502,21 @@
           return (
             i(e, [
               {
-                key: 'phone',
+                key: "phone",
                 value: function () {
                   var e = o();
                   return !(!r.test(e) && !a.test(e.substr(0, 4)));
                 },
               },
               {
-                key: 'mobile',
+                key: "mobile",
                 value: function () {
                   var e = o();
                   return !(!u.test(e) && !c.test(e.substr(0, 4)));
                 },
               },
               {
-                key: 'tablet',
+                key: "tablet",
                 value: function () {
                   return this.mobile() && !this.phone();
                 },
@@ -528,15 +528,15 @@
       t.default = new f();
     },
     function (e, t) {
-      'use strict';
-      Object.defineProperty(t, '__esModule', { value: !0 });
+      "use strict";
+      Object.defineProperty(t, "__esModule", { value: !0 });
       var n = function (e, t, n) {
-          var o = e.node.getAttribute('data-aos-once');
+          var o = e.node.getAttribute("data-aos-once");
           t > e.position
-            ? e.node.classList.add('aos-animate')
-            : 'undefined' != typeof o &&
-              ('false' === o || (!n && 'true' !== o)) &&
-              e.node.classList.remove('aos-animate');
+            ? e.node.classList.add("aos-animate")
+            : "undefined" != typeof o &&
+              ("false" === o || (!n && "true" !== o)) &&
+              e.node.classList.remove("aos-animate");
         },
         o = function (e, t) {
           var o = window.pageYOffset,
@@ -548,17 +548,17 @@
       t.default = o;
     },
     function (e, t, n) {
-      'use strict';
+      "use strict";
       function o(e) {
         return e && e.__esModule ? e : { default: e };
       }
-      Object.defineProperty(t, '__esModule', { value: !0 });
+      Object.defineProperty(t, "__esModule", { value: !0 });
       var i = n(12),
         r = o(i),
         a = function (e, t) {
           return (
             e.forEach(function (e, n) {
-              e.node.classList.add('aos-init'),
+              e.node.classList.add("aos-init"),
                 (e.position = (0, r.default)(e.node, t.offset));
             }),
             e
@@ -567,11 +567,11 @@
       t.default = a;
     },
     function (e, t, n) {
-      'use strict';
+      "use strict";
       function o(e) {
         return e && e.__esModule ? e : { default: e };
       }
-      Object.defineProperty(t, '__esModule', { value: !0 });
+      Object.defineProperty(t, "__esModule", { value: !0 });
       var i = n(13),
         r = o(i),
         a = function (e, t) {
@@ -579,9 +579,9 @@
             o = 0,
             i = window.innerHeight,
             a = {
-              offset: e.getAttribute('data-aos-offset'),
-              anchor: e.getAttribute('data-aos-anchor'),
-              anchorPlacement: e.getAttribute('data-aos-anchor-placement'),
+              offset: e.getAttribute("data-aos-offset"),
+              anchor: e.getAttribute("data-aos-anchor"),
+              anchorPlacement: e.getAttribute("data-aos-anchor-placement"),
             };
           switch (
             (a.offset && !isNaN(a.offset) && (o = parseInt(a.offset)),
@@ -591,30 +591,30 @@
             (n = (0, r.default)(e).top),
             a.anchorPlacement)
           ) {
-            case 'top-bottom':
+            case "top-bottom":
               break;
-            case 'center-bottom':
+            case "center-bottom":
               n += e.offsetHeight / 2;
               break;
-            case 'bottom-bottom':
+            case "bottom-bottom":
               n += e.offsetHeight;
               break;
-            case 'top-center':
+            case "top-center":
               n += i / 2;
               break;
-            case 'bottom-center':
+            case "bottom-center":
               n += i / 2 + e.offsetHeight;
               break;
-            case 'center-center':
+            case "center-center":
               n += i / 2 + e.offsetHeight / 2;
               break;
-            case 'top-top':
+            case "top-top":
               n += i;
               break;
-            case 'bottom-top':
+            case "bottom-top":
               n += e.offsetHeight + i;
               break;
-            case 'center-top':
+            case "center-top":
               n += e.offsetHeight / 2 + i;
           }
           return a.anchorPlacement || a.offset || isNaN(t) || (o = t), n + o;
@@ -622,27 +622,27 @@
       t.default = a;
     },
     function (e, t) {
-      'use strict';
-      Object.defineProperty(t, '__esModule', { value: !0 });
+      "use strict";
+      Object.defineProperty(t, "__esModule", { value: !0 });
       var n = function (e) {
         for (
           var t = 0, n = 0;
           e && !isNaN(e.offsetLeft) && !isNaN(e.offsetTop);
 
         )
-          (t += e.offsetLeft - ('BODY' != e.tagName ? e.scrollLeft : 0)),
-            (n += e.offsetTop - ('BODY' != e.tagName ? e.scrollTop : 0)),
+          (t += e.offsetLeft - ("BODY" != e.tagName ? e.scrollLeft : 0)),
+            (n += e.offsetTop - ("BODY" != e.tagName ? e.scrollTop : 0)),
             (e = e.offsetParent);
         return { top: n, left: t };
       };
       t.default = n;
     },
     function (e, t) {
-      'use strict';
-      Object.defineProperty(t, '__esModule', { value: !0 });
+      "use strict";
+      Object.defineProperty(t, "__esModule", { value: !0 });
       var n = function (e) {
         return (
-          (e = e || document.querySelectorAll('[data-aos]')),
+          (e = e || document.querySelectorAll("[data-aos]")),
           Array.prototype.map.call(e, function (e) {
             return { node: e };
           })

@@ -45,13 +45,9 @@ theme_copyright = true
 enable = false
 preloader = "images/preloader.gif" # use jpg, png, svg or gif format.
 
-[restaurantMenu]
-enable = true
-label = "Our Menu"
-
 # Navigation button
 [navigation_button]
-enable = true
+enable = false
 label = "sign up"
 link = "#"
 

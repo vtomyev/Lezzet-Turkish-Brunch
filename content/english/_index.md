@@ -145,8 +145,9 @@ pricing:
   section : "pricing"
   show_items : 3
   # pricing item comes from "content/*/pricing.md"
-
+############################## restaurantMenu ###########################
 restaurantMenu:
   enable : true
   label : "Our Menu"
+  section : "restaurantMenu"
 ---

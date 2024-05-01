@@ -22,11 +22,13 @@
   {{ end }}
 {{ end }}
 
+
 <!-- search script -->
 {{ if site.Params.search }}
-{{ $scripts = $scripts | append (resources.Get "plugins/search/fuse.min.js" ) }}
-{{ $scripts = $scripts | append (resources.Get "plugins/search/search.js" ) }}
+  {{ $scripts = $scripts | append (resources.Get "plugins/search/fuse.min.js" ) }}
+  {{ $scripts = $scripts | append (resources.Get "plugins/search/search.js" ) }}
 {{ end }}
+
 
 <!-- main script -->
 {{ $scripts = $scripts | append (resources.Get "js/script.js") }}
@@ -49,7 +51,6 @@
     active: () => {sessionStorage.fontsLoaded = true}
   });
 </script>
-
 
 <!-- progressive web app -->
 {{ partialCached "pwa.html" . }}

@@ -2,13 +2,13 @@
 title: "Cupidat non proident sunt officia deserunt mollit anim."
 watermark: "Blog"
 date: 2019-04-10T09:51:57+06:00
-description : "this is meta description"
+description: "this is meta description"
 short_description: "Cupidatat non proident sunt culpa qui officia deserunt mollit <br> anim idest laborum sed ut perspiciatis."
 page_header_image: "images/background/about.jpg"
-image : "images/blog/blog-post-6.jpg"
-author : "ADMIN"
-type : "post"
-categories: 
+image: "images/blog/blog-post-6.jpg"
+author: "ADMIN"
+type: "post"
+categories:
   - "Targated Marketing"
 tags:
   - "Advice"
