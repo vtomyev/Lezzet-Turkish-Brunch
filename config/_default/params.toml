@@ -13,7 +13,7 @@ logo_width = "148px"
 logo_webp = true
 
 # logo text will only show when logo is missing.
-logo_text = "Agico"
+logo_text = "Lezzet Turkish Brunch"
 
 # purgeCSS
 purge_css = true
@@ -53,9 +53,8 @@ link = "#"
 
 # contact info
 [contact_info]
-address = "9567 Turner Trace Apt. 466 North Willie, BC C3G8A4"
-mobile = "+211234565523"
-email = "info@agico.com"
+address = "12722 SE 312th St Suite H Auburn, WA 98092"
+mobile = "(253) 737-4601"
 
 # google_map
 [google_map]
@@ -77,9 +76,9 @@ crisp_website_id = "9aa449e1-9999-422a-938f-8567982eec6d" # replace this code wi
 
 # seo meta data for OpenGraph / Twitter Card
 [metadata]
-keywords = ["Agico", "Hugo", "Themefisher", "GetHugoThemes"]
-description = "This is meta description"
-author = "GetHugoThemes"
+keywords = ["turkish", "brunch", "auburn", "kent"]
+description = "Lezzet Turkish Brunch"
+author = "Forrtek Solutions"
 image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
 
 # matomo tracking: see https://matomo.org/
