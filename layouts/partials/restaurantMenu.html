@@ -22,9 +22,7 @@
                     <div class="row align-items-center g-0">
                       <div class="col-md-4 p-xs-5 text-center">
                         <figure class="figure my-0">
-                          <img
-                            src="https://thestayathomechef.com/wp-content/uploads/2023/05/Greek-Pizza-8-378x378.jpg"
-                            class="figure-img img-fluid rounded-circle my-0" />
+                          {{ partial "image.html" (dict "Src" .image "Alt" .alt "Class" "img-fluid my-0") }}
                         </figure>
                       </div>
                     <div class="col-md-8">
@@ -39,6 +37,13 @@
                             <p class="card-subtitle text-body-secondary mb-3 mt-1">{{ .description }}</p>
                           </div>
                         </div>
+                        {{ if .price}}
+                        <div class="row">
+                          <div class="col">
+                            <h6 class="card-subtitle text-body-primary mb-3 mt-1">{{ .price }}</h6>
+                          </div>
+                        </div>
+                        {{ end}}
                       </div>
                       <div class="container tex-center">
                         <div class="row row-cols-2">
