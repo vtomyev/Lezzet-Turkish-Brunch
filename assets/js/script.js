@@ -109,9 +109,9 @@
     scrolling = window.scrollY;
 
     if (scrolling > 10) {
-      navigation.classList.remove("");
+      navigation.classList.replace();
     } else {
-      navigation.classList.add("");
+      navigation.classList.replace();
     }
   }
 
