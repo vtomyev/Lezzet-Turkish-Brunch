@@ -16,7 +16,7 @@
         {{ $delay := mul $index 200 }}
       
           <div class="col-12">
-            <div class="card border-info text-bg-light">
+            <div class="card border-info bg-gradient-secondary">
                 
                   <div class="card-body">
                     <div class="row align-items-center g-0">
@@ -29,7 +29,7 @@
                       <div class="container text-center">
                         <div class="row ">
                           <div class="col">
-                            <h5 class="card-title mb-1 border-bottom border-2">{{ .title }}</h5>
+                            <h5 class="card-title text-dark mb-1 border-bottom border-2">{{ .title }}</h5>
                           </div>
                         </div>
                         <div class="row">
@@ -40,7 +40,7 @@
                         {{ if .price}}
                         <div class="row">
                           <div class="col">
-                            <h6 class="card-subtitle text-body-primary mb-3 mt-1">{{ .price }}</h6>
+                            <h6 class="card-subtitle text-dark text-body-primary mb-3 mt-1">{{ .price }}</h6>
                           </div>
                         </div>
                         {{ end}}
@@ -59,7 +59,7 @@
                                     </p>
                                     {{ end }}
                                   </div>
-                                  <div class="col-4">
+                                  <div class="col-4 ps-0">
                                     <h7 class="text-body-primary">{{ .price }}</h7>
                                   </div>
                                 </div>
