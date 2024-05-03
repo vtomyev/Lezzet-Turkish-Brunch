@@ -1,0 +1,35 @@
+.social-icons {
+    li {
+      a {
+        i {
+          width: 46px !important;
+          padding: 13px;
+          height: 46px;
+          line-height: 46px;
+          color: $text-light;
+          text-align: center;
+          border: 2px solid $border-color;
+          display: block;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @extend .transition;
+  
+          &:hover {
+            background-color: $color-primary;
+            border: 2px solid $color-primary;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
+.sticky-top{
+    top:0;
+}
+
+.overlap {
+  position: absolute;
+}
