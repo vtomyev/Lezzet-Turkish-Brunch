@@ -7,9 +7,9 @@
 ######################### site variables ##############################
 # site variables
 [params.variables]
-color_primary = "#007ac7"
+color_primary = "#6c9e80"
 color_secondary = "#00e0d8"
-bg_secondary = "#15192b"
+bg_secondary = "#6c9e80"
 text_dark = "#242f3e"
 text_color = "#8b8e93"
 text_light = "#d4dae3"

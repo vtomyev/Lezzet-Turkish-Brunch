@@ -1,11 +1,11 @@
 ############# English navigation ##############
 # main menu    
-[[main]]
-name = "Contact"
-URL = "contact/"
-weight = 5
+# [[main]]
+# name = "Contact"
+# URL = "contact/"
+# weight = 5
 
 #Footer menu
-[[footer]]
-name = "Contact us"
-URL = "contact/"
+# [[footer]]
+# name = "Contact us"
+# URL = "contact/"

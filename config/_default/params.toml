@@ -1,6 +1,6 @@
 #################### default parameters ################################
 # favicon
-favicon = "images/favicon.png"
+favicon = "images/lezzet-favicon.png"
 
 # logo
 logo = "images/lezzet-logo.png"
@@ -38,7 +38,8 @@ google_adsense = ""     # example: ca-pub-xxxxxxxxxxxxxxxx
 custom_script = ""
 
 # copyright
-theme_copyright = true
+copyright = "Copyright Lezzet Turkish Brunch"
+design_by = "[Forrtek Solutions](https://forrtek.com)"
 
 # Preloader
 [preloader]
@@ -77,7 +78,7 @@ crisp_website_id = "9aa449e1-9999-422a-938f-8567982eec6d" # replace this code wi
 # seo meta data for OpenGraph / Twitter Card
 [metadata]
 keywords = ["turkish", "brunch", "auburn", "kent"]
-description = "Lezzet Turkish Brunch"
+description = "Lezzet Brunch - Lezzet Brunch is a Turkish Restaurant in Auburn, WA 98092"
 author = "Forrtek Solutions"
 image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
 
@@ -119,26 +120,16 @@ button = "I Accept"
 
 ############################# social site ########################
 [[social]]
-title = "facebook"
-icon = "fab fa-facebook" # fontawesome icon pack : https://fontawesome.com/icons/
-link = "#"
+title = "pinterest"
+icon = "fab fa-pinterest" # fontawesome icon pack : https://fontawesome.com/icons/
+link = "https://www.pinterest.com/LezzetBrunch/"
 
 [[social]]
-title = "twitter"
-icon = "fab fa-twitter" # fontawesome icon pack : https://fontawesome.com/icons/
-link = "#"
+title = "google"
+icon = "fab fa-google" # fontawesome icon pack : https://fontawesome.com/icons/
+link = "https://g.page/r/CQbki5MuvLeLEBA"
 
 [[social]]
-title = "instagram"
-icon = "fab fa-instagram" # fontawesome icon pack : https://fontawesome.com/icons/
-link = "#"
-
-[[social]]
-title = "github"
-icon = "fab fa-github" # fontawesome icon pack : https://fontawesome.com/icons/
-link = "#"
-
-[[social]]
-title = "linkedin"
-icon = "fab fa-linkedin" # fontawesome icon pack : https://fontawesome.com/icons/
-link = "#"
+title = "yelp"
+icon = "fab fa-yelp" # fontawesome icon pack : https://fontawesome.com/icons/
+link = "https://www.yelp.com/biz/lezzet-brunch-auburn-2"
