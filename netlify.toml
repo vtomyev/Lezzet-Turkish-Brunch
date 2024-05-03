@@ -6,7 +6,7 @@ command = "npm run build"
 HUGO_VERSION = "0.115.1"
 GO_VERSION = "1.19.4"
 HUGO_THEME = "agico-hugo"
-HUGO_BASEURL = "https://lezzetturkishbrunch.com"
+HUGO_BASEURL = "https://lezzet.netlify.app/"
 
 [[headers]]
 for = "/*" # This defines which paths this specific [[headers]] block will cover.
