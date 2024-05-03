@@ -30,6 +30,10 @@
     top:0;
 }
 
-.overlap {
-  position: absolute;
+.copyright a:hover {
+  color: $text-dark;
+}
+
+.contact-list li a:hover {
+  color: $text-light !important;
 }
