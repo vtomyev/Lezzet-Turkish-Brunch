@@ -55,6 +55,7 @@ link = "#"
 # contact info
 [contact_info]
 address = "12722 SE 312th St Suite H Auburn, WA 98092"
+address_link = "https://g.page/r/CQbki5MuvLeLEBA"
 mobile = "(253) 737-4601"
 
 # google_map
@@ -125,6 +126,12 @@ icon = "fab fa-pinterest" # fontawesome icon pack : https://fontawesome.com/icon
 link = "https://www.pinterest.com/LezzetBrunch/"
 
 [[social]]
+title = "instagram"
+icon = "fab fa-instagram" # fontawesome icon pack : https://fontawesome.com/icons/
+link = "https://www.instagram.com/lezzetbrunch/"
+
+
+[[social]]
 title = "google"
 icon = "fab fa-google" # fontawesome icon pack : https://fontawesome.com/icons/
 link = "https://g.page/r/CQbki5MuvLeLEBA"
@@ -133,3 +140,32 @@ link = "https://g.page/r/CQbki5MuvLeLEBA"
 title = "yelp"
 icon = "fab fa-yelp" # fontawesome icon pack : https://fontawesome.com/icons/
 link = "https://www.yelp.com/biz/lezzet-brunch-auburn-2"
+
+############################## business hours ###########################
+
+[[business_hours]]
+day = "Monday"
+time = "8AM - 4PM"
+
+[[business_hours]]
+day = "Tuesday"
+time = "8AM - 4PM"
+[[business_hours]]
+day = "Wednesday"
+time = "8AM - 4PM"
+
+[[business_hours]]
+day = "Thursday"
+time = "8AM - 4PM"
+
+[[business_hours]]
+day = "Friday"
+time = "8AM - 4PM"
+
+[[business_hours]]
+day = "Saturday"
+time = "9AM - 5PM"
+
+[[business_hours]]
+day = "Sunday"
+time = "9AM - 5PM"
