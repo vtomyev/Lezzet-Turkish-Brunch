@@ -1,14 +1,14 @@
 ---
 ############################### Banner #################################
 banner:
-  enable : false
-  bg_image : "images/background/banner.png"
+  enable : true
+  bg_image : "images/background/hero.jpg"
   title : "Build Your Business Together"
   watermark : "Build"
   content : "Cupidatat non proident sunt culpa qui officia deserunt mollit <br> anim idest laborum sed ut perspiciatis."
-  image : "images/banner/banner-1.png"
+  image : ""
   button:
-    enable : true
+    enable : false
     label : "Get Agico"
     link : "#"
 
