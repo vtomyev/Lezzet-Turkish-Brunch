@@ -106,10 +106,16 @@ restaurantMenu:
       alt : "image of menemen"
 
     - title: "Manti"
-      price: "14"
       description: "Turkish mini dumplings topped with yogurt garlic and tomato butter sauces"
       image : "/images/restaurantMenu/manti.png"
       alt : "image of manti"
+      variations:
+        - title : "Beef"
+          description : ""
+          price : "17"
+        - title : "Cheese"
+          description : ""
+          price : "15"
 
     - title: "Kahvalti Tabagi"
       price: "19"
