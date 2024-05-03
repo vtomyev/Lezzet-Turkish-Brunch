@@ -9,7 +9,13 @@
 
   &.nav-bg {
     background: $bg-gradient-secondary;
-    padding: 15px 0;
+    padding: 25px 0;
+  }
+  
+  &.nav-bg-translucent {
+    background: $bg-gradient-secondary;
+    opacity: 0.75;
+    padding: 25px 0;
   }
 
   &.navigation-white {
@@ -64,7 +70,7 @@
 
     .fa-times,
     .fa-bars {
-      color: $white !important;
+      color: $text-dark !important;
       font-size: 25px;
     }
 
