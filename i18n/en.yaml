@@ -36,3 +36,6 @@
 
 - id: subscribe_now
   translation: Subscribe Now
+
+- id: business_hours
+  translation: Business Hours
