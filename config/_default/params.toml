@@ -79,7 +79,7 @@ crisp_website_id = "9aa449e1-9999-422a-938f-8567982eec6d" # replace this code wi
 # seo meta data for OpenGraph / Twitter Card
 [metadata]
 keywords = ["turkish", "brunch", "auburn", "kent"]
-description = "Lezzet Brunch - Lezzet Brunch is a Turkish Restaurant in Auburn, WA 98092"
+description = "Lezzet Turkish Brunch is a Turkish Restaurant in Auburn, WA 98092"
 author = "Forrtek Solutions"
 image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
 
