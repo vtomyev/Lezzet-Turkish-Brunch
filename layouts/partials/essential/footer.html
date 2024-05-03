@@ -1,15 +1,30 @@
 {{ "<!-- footer part start -->" | safeHTML }}
-<footer class="white border-top">
+<footer class="bg-secondary border-top">
   <div class="section border-bottom-0 py-5">
     <div class="container">
-      <div class="row justify-content-between">
-        <div class="col-md-5 mb-4 mb-md-0">
-          <!-- <a href="{{ site.BaseURL | relLangURL }}" class="mb-4 d-inline-block">
-            {{ partial "logo.html" (dict "Alt" site.Title) }}
-          </a> -->
-          <p class="text-dark mb-4">
-            {{ site.Params.footer_content | markdownify }}
-          </p>
+      <div class="row justify-content-center">
+        <div class="col-md-3 col-sm-6">
+          <h4 class="text-dark mb-4">{{ i18n "business_hours" }}</h4>
+          <ul class="list-unstyled list-hover-underline">
+            {{ range site.Params.business_hours }}
+              <li class="row mb-3 text-dark">
+                <div class="col-6">{{ .day }}</div>
+                <div class="col-6">{{ .time }}</div>
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <h4 class="text-dark mb-4">{{ i18n "contact_info" }}</h4>
+          <ul class="list-unstyled contact-list">
+            <li class="mb-3 text-dark">
+              <a class="mb-3 text-dark" href="{{site.Params.contact_info.address_link | safeHTML }}">{{site.Params.contact_info.address | safeHTML }}</a>
+            </li>
+            <li class="mb-3 text-dark"><a class="mb-3 text-dark" href="tel:{{site.Params.contact_info.mobile | safeHTML }}">{{site.Params.contact_info.mobile | safeHTML }}</a></li>
+            <li class="mb-3 text-dark">
+              {{ site.Params.contact_info.email | safeHTML }}
+            </li>
+          </ul>
           <ul class="list-inline social-icons">
             {{ range site.Params.social }}
               <li class="list-inline-item">
@@ -19,32 +34,6 @@
                 >
               </li>
             {{ end }}
-          </ul>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <h4 class="text-dark mb-4">{{ i18n "quick_links" }}</h4>
-          <ul class="list-unstyled list-hover-underline">
-            {{ range site.Menus.footer }}
-              <li class="mb-3 text-dark">
-                <a href="{{ .URL | relLangURL }}" class="text-dark"
-                  >{{ .Name }}</a
-                >
-              </li>
-            {{ end }}
-          </ul>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
-          <h4 class="text-dark mb-4">{{ i18n "contact_info" }}</h4>
-          <ul class="list-unstyled">
-            <li class="mb-3 text-dark">
-              {{ site.Params.contact_info.address | safeHTML }}
-            </li>
-            <li class="mb-3 text-dark">
-              {{ site.Params.contact_info.mobile | safeHTML }}
-            </li>
-            <li class="mb-3 text-dark">
-              {{ site.Params.contact_info.email | safeHTML }}
-            </li>
           </ul>
         </div>
       </div>
