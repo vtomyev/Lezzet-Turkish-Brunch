@@ -64,3 +64,34 @@
 .contact-icons{
   color: $text-dark;
 }
+
+.btn-outline-primary {
+  color: $color-secondary;
+  border: 2px solid $color-secondary !important;
+
+  &:hover {
+    color: $white !important;
+    background: none !important;
+    border: 2px solid $color-secondary;
+
+    i {
+      color: $white !important;
+    }
+
+    &:after {
+      left: 0;
+    }
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -102%;
+    width: 102%;
+    height: 100%;
+    background: $btn-gradient-primary;
+    z-index: -1;
+    transition: ease 0.3s;
+  }
+}
