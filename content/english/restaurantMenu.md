@@ -71,15 +71,16 @@ restaurantMenu:
       image : "/images/restaurantMenu/beyti-kebab.png"
       alt : "image of beyti kebab"
       variations:
-        - title : "Grilled eggplant"
-          description : ""
-          price : "15"
         - title : "Chicken"
           description : ""
           price : "17"
+        - title : "Grilled Eggplant"
+          description : ""
+          price : "15"
         - title : "Ground Beef"
           description : ""
           price : "18"
+
 
     - title: "Rice Bowls"
       description: "Served with house made pickles, grilled veggies, red cabbage salad salad and grilled eggplant ezme"
@@ -134,17 +135,20 @@ restaurantMenu:
       image : "/images/restaurantMenu/flat-bread.png"
       alt : "image of turkish flatbread"
       variations:
-        - title : "Vegie"
-          description : "Tomato, mushrooms, zucchini and cauliflower"
-          price : "14"
+        - title : "Cheese only"
+          price : "12"
         - title : "Sucuk"
           description : "Spiced beef sausage"
           price : "16"
+        - title : "Chicken"
+          price : "15"
         - title : "Kiymali"
           description : "Ground beef"
           price : "16"
-        - title : "Chicken"
-          price : "15"
-        - title : "Cheese only"
-          price : "12"
+        - title : "Vegie"
+          description : "Tomato, mushrooms, zucchini and cauliflower"
+          price : "14"
+
+
+
 ---
