@@ -123,6 +123,12 @@ restaurantMenu:
       image : "/images/restaurantMenu/kahvalti-tabagi.png"
       alt : "image of kahvalti tabagi"
     
+    - title: "Mashed Potatoes with Chicken Wings"
+      price: "17"
+      description: "Oven baked chicken wings in a creamy tomato sauce with garbanzo beans served on a bed of mashed potatoes."
+      image : "/images/restaurantMenu/mashed-potato-wings.png"
+      alt : "image of mashed potatos and chicken wings"
+    
     - title: "Choice of Pides"
       description: "Turkish Flatbread"
       image : "/images/restaurantMenu/flat-bread.png"
