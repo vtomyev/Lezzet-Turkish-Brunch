@@ -60,8 +60,8 @@ mobile = "(253) 737-4601"
 
 # google_map
 [google_map]
-enable = false
-embed_url = "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d193559.60513193885!2d-74.07513185946965!3d40.709896425630156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1677481601686!5m2!1sen!2sbd"
+enable = true
+embed_url = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2704.5663383819883!2d-122.17188619999997!3d47.322809899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549059005deccd71%3A0x8bb7bc2e938be406!2sLezzet%20Brunch!5e0!3m2!1sen!2sus!4v1714780573976!5m2!1sen!2sus"
 
 # Subscription
 [subscription]
