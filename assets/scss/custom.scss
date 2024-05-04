@@ -37,3 +37,30 @@
 .contact-list li a:hover {
   color: $text-light !important;
 }
+
+.page-title {
+  & > div {
+    background: $bg-gradient-secondary;
+    opacity: 0.7;
+
+    & > div {
+      padding: 220px 0 100px;
+    }
+  }
+
+  h1 {
+    font-size: 45px;
+    opacity: 1;
+  }
+
+  p {
+    opacity: 1;
+  }
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  color: inherit;
+}
+
+.contact-icons{
+  color: $text-dark;
+}
