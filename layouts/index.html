@@ -3,8 +3,7 @@
   {{ with .Params.banner }}
     {{ if .enable }}
       <section
-        class="hero-area p-0 ">
-        {{ partial "image.html" (dict "Src" .bg_image "Alt" "background image for hero area") }}
+        class="hero-area" {{ partial `bg-image.html` (dict `Src` .bg_image) | safeHTMLAttr }}>
       </section>
     {{ end }}
   {{ end }}
