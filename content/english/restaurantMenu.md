@@ -60,7 +60,7 @@ restaurantMenu:
 
     - title: "Glutten Free Waffle"
       price: "13"
-      description: "Gluten free waffle loaded with fresh berries and whipped cream and sprinkled with pecans "
+      description: "Gluten free waffle loaded with fresh berries and whipped cream and sprinkled with pecans"
       image : "/images/restaurantMenu/gf-waffle.png"
       alt : "image of glutten free waffle"
 
@@ -125,7 +125,7 @@ restaurantMenu:
     
     - title: "Mashed Potatoes with Chicken Wings"
       price: "17"
-      description: "Oven baked chicken wings in a creamy tomato sauce with garbanzo beans served on a bed of mashed potatoes."
+      description: "Oven baked chicken wings in a creamy tomato sauce with garbanzo beans served on a bed of mashed potatoes"
       image : "/images/restaurantMenu/mashed-potato-wings.png"
       alt : "image of mashed potatos and chicken wings"
     
