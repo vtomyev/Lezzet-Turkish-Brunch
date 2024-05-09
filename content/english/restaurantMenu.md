@@ -83,7 +83,7 @@ restaurantMenu:
 
 
     - title: "Rice Bowls"
-      description: "Served with house made pickles, grilled veggies, red cabbage salad salad and grilled eggplant ezme"
+      description: "Served with house made pickles, grilled veggies, red cabbage salad and grilled eggplant ezme"
       image : "/images/restaurantMenu/kofte-bowl.png"
       alt : "image of kofte rice bowl"
       variations:
